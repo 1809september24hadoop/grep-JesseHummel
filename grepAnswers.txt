@@ -1,0 +1,12 @@
+1. cat cities.txt | grep -i '^z'
+2. cat cities.txt | grep -i 'gan\>'
+3. cat cities.txt | grep '^[ADE]'
+4. cat cities.txt | grep -c '\<.ar'
+5. cat cities.txt | grep -v '^C'
+6. cat cities.txt | grep -E '\S{14}'
+7. cat cities.txt | grep -c '^B'
+8. cat cities.txt | grep d -o | wc -w
+
+For the last two the $ wasn't working, so I used \> and it was giving me the right answers.
+9. cat cities.txt | grep -E '(.)\1{1}\>'
+10. cat testcities.txt | grep -E -i '^(.)(.).\2\1\>
